@@ -1,0 +1,9 @@
+web:
+  build: .
+  #command: python app.py
+  ports:
+   - "8000:5000"
+  links:
+   - cassandra
+cassandra:
+  image: cassandra:2.2.0
